@@ -15,11 +15,8 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    padding: 0 12%;
-}
 section {
-    padding: 100px 0;
+    padding: 100px 12%;
 }
 .section-heading {
     font-family: var(--primaryFont);
@@ -55,7 +52,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 12%;
     font-family: var(--primaryFont);
 }
 /* Logo */
@@ -101,7 +98,7 @@ header nav a:hover::after {
 /* Button */
 header .btn {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary);
     border: 2px solid var(--primary);
     padding: 6px 20px;
@@ -118,7 +115,7 @@ header .btn:hover {
 .hero {
     position: relative;
     padding-top: 10%;
-    width: 96%;
+    width: 72%;
     margin: 0 auto;
     height: 655px;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(img/bg.jpg) top/cover;
@@ -135,6 +132,8 @@ header .btn:hover {
     color: var(--white);
     font-weight: 600;
     line-height: 120%;
+    width: 54%;
+    margin: 0 auto;
 }
 .hero h1 span {
     z-index: 1;
@@ -153,10 +152,12 @@ header .btn:hover {
     border-radius: 50px;
     transform: rotate(-1deg);
 }
-.hero p {
+.hero .desc {
     font-size: 24px;
     font-family: var(--secondaryFont);
     color: var(--white);
+    width: 50%;
+    margin: 0 auto;
 }
 .hero .btn {
     font-family: var(--primaryFont);
@@ -194,13 +195,15 @@ header .btn:hover {
     box-shadow: 0 4px 20px 0 #ffffff28;
 }
 .hero .social-proof p {
+    font-family: var(--secondaryFont);
+    color: var(--white);
     font-size: 16px;
     text-align: left;
     line-height: 140%;
 }
 
 
-/* Services section */
+/* ------ Services section ------ */
 #services .section-heading {
     text-align: center;
 }
@@ -242,7 +245,72 @@ header .btn:hover {
 }
 #services .service-desc {
     color: var(--grey);
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--secondaryFont);
+    font-weight: 400;
+}
+
+/* ------ Testimonials section ------ */
+#testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F5F5;
+}
+#testimonials .card {
+    font-family: var(--secondaryFont);
+    position: relative;
+    width: 340px;
+    height: 400px;
+    background: var(--white);
+    box-shadow: 0 0 20px 0 #00000004;
+    border-radius: 16px;
+    text-align: center;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#testimonials .quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+    font-size: 200px;
+    opacity: 0.04;
+}
+#testimonials .card .picture {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%, -10%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 #00000010;
+}
+#testimonials .card .picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#testimonials .card .company {
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 500;
+}
+#testimonials .card .name {
+    margin-top: 4px;
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 600;
+}
+#testimonials .card .text {
+    margin-top: 24px;
+    font-size: 17px;
+    color: var(--grey);
     font-weight: 400;
 }

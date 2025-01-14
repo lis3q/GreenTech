@@ -1,0 +1,55 @@
+/* Phones */
+@media screen and (max-width: 500px) {
+
+    /* ------ Settings ------ */
+    .section-title {
+        font-size: 34px;
+    }
+    header {
+        padding: 40px 4%;
+    }
+    section {
+        padding: 100px 4%;
+    }
+    header nav {
+        display: none;
+    }
+    header .btn {
+        display: none;
+    }
+
+    /* ------ Hero ------ */
+    .hero {
+        width: 94%;
+        padding: 14% 24px;
+    }
+    .hero h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .hero p.desc {
+        font-size: 20px;
+        width: 100%;
+    }
+    .hero .btn {
+        font-size: 16px;
+    }
+    /* Social proof */
+    .hero .social-proof {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+        left: 50%;
+        transform: translate(-50%, -3%);
+    }
+    .hero .social-proof p {
+        text-align: center;
+    }
+
+    /* ------ Services section ------ */
+    #services .container {
+        margin-top: 16%;
+        grid-template-columns: repeat(1, 0fr);
+        gap: 40px;
+    }
+}
