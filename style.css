@@ -12,8 +12,31 @@
     background: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
-    padding: 0 140px;
+    padding: 0 12%;
+}
+section {
+    padding: 100px 0;
+}
+.section-heading {
+    font-family: var(--primaryFont);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.section-name {
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 500;
+}
+.section-title {
+    font-size: 36px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 140%;
 }
 
 /* Variables */
@@ -21,6 +44,7 @@ body {
     --primary: #00C80D;
     --white: #fff;
     --black: #131313;
+    --grey: #909090;
     --primaryFont: 'Poppins', sans-serif;
     --secondaryFont: 'Roboto', sans-serif;
 }
@@ -53,7 +77,7 @@ header nav {
 }
 header nav a {
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     color: var(--black);
     transition: color .2s ease-in-out;
@@ -64,7 +88,7 @@ header nav a::after {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 2px;
+    height: 1px;
     background-color: var(--primary);
     transition: width .2s ease-in-out;
 }
@@ -92,11 +116,12 @@ header .btn:hover {
 
 /* ------ Hero ------ */
 .hero {
+    position: relative;
     padding-top: 10%;
-    margin-left: -2%;
-    width: 104%;
+    width: 96%;
+    margin: 0 auto;
     height: 655px;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(bg.jpg) top/cover;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url(img/bg.jpg) top/cover;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -147,4 +172,77 @@ header .btn:hover {
 }
 .hero .btn:hover {
     box-shadow: 0 5px 14px 0 #00c80d80;
+}
+/* Social proof */
+.hero .social-proof {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    display: flex;
+    gap: 40px;
+}
+.hero .social-proof .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .social-proof .images img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -20px;
+    box-shadow: 0 4px 20px 0 #ffffff28;
+}
+.hero .social-proof p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 140%;
+}
+
+
+/* Services section */
+#services .section-heading {
+    text-align: center;
+}
+#services .container {
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    justify-content: center;
+    align-items: start;
+    gap: 60px;
+}
+#services .service {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+#services .service-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services .service-icon i {
+    color: var(--white);
+    font-size: 26px;
+}
+#services .service-title {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+}
+#services .service-desc {
+    color: var(--grey);
+    font-size: 15px;
+    font-family: var(--secondaryFont);
+    font-weight: 400;
 }
