@@ -261,7 +261,7 @@ header .btn:hover {
     display: flex;
     align-items: center;
     background: #fafafa;
-    height: 60vh;
+    height: 70vh;
 }
 /* Slider */
 #testimonials .swiper {
@@ -270,6 +270,7 @@ header .btn:hover {
     right: 4%;
     transform: translate(-4%, -50%);
     width: 40%;
+    padding-top: 4%;
 }
 #testimonials .swiper-wrapper {
     cursor: grab;
@@ -309,9 +310,8 @@ header .btn:hover {
 }
 /* Card */
 #testimonials .card {
-    z-index: 100;
-    font-family: var(--secondaryFont);
     position: relative;
+    font-family: var(--secondaryFont);
     min-width: 340px;
     height: 400px;
     background: var(--white);
@@ -334,21 +334,17 @@ header .btn:hover {
     opacity: 0.04;
 }
 #testimonials .card .picture {
-    z-index: 10;
     position: absolute;
     left: 50%;
     top: -10%;
     transform: translate(-50%, -10%);
     width: 120px;
     height: 120px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px 0 #00000010;
 }
 #testimonials .card .picture img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+    clip-path: circle(50%);
 }
 #testimonials .card .company {
     font-size: 16px;
@@ -382,13 +378,13 @@ header .btn:hover {
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 40px;
+    gap: 20px;
 }
 /* Card */
 #blog .card {
     position: relative;
-    width: 360px;
-    height: 460px;
+    width: 420px;
+    height: 500px;
     border-radius: 10px;
     background: var(--white);
     box-shadow: 0 0 20px 0 #00000004;
@@ -397,38 +393,97 @@ header .btn:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all .2s ease-in-out;
+    border: 1px solid #ebebeb;
+}
+#blog .card:hover {
+    transform: translateY(-3px);
 }
 #blog .card .image {
     width: 100%;
     background-color: red;
-    height: 180px;
+    height: 220px;
     border-radius: 10px;
 }
-#blog .card .date {
-    font-size: 12px;
-    color: var(--black);
+#blog .card .tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    margin: 4px 0;
 }
-#blog .card .date span {
-    color: var(--primary);
+#blog .card .tags::-webkit-scrollbar {
+    display: none;
+}
+#blog .card .tag {
+    padding: 5px 10px;
+    color: var(--black);
+    background: #ececec;
+    border-radius: 14px;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
 }
 #blog .card .title {
     font-size: 22px;
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#blog .card .title:hover {
+    color: var(--primary);
 }
 #blog .card .text {
     color: var(--grey);
-    font-size: 16px;
+    font-size: 17px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-#blog .card a {
+#blog .card .footer {
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    width: max-content;
-    color: var(--black);
-    text-decoration: underline;
-    transition: all .2s ease-in-out;
+    left: 0;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#blog .card a:hover {
-    color: var(--primary);
+#blog .card .footer .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#blog .card .footer .picture {
+    width: 46px;
+    height: 46px;
+    clip-path: circle(48%);
+    background: purple;
+}
+#blog .card .footer .picture img {
+    width: 100%;
+    height: 100%;
+}
+#blog .card .footer .author-name {
+    font-weight: 400;
+    color: var(--black);
+}
+#blog .card .footer .date {
+    margin-top: 4px;
+    color: var(--grey);
+    font-size: 14px;
+}
+#blog .card .footer i {
+    font-size: 22px;
+    color: var(--black);
+    cursor: pointer;
 }
 
 /* ------ Contact section ------ */
