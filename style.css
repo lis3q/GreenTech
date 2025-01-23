@@ -216,7 +216,7 @@ header .btn:hover {
     text-align: center;
 }
 #services .container {
-    margin-top: 6%;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     justify-content: center;
@@ -374,9 +374,23 @@ header .btn:hover {
 #portfolio .section-heading {
     text-align: right;
 }
+#portfolio .container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
 #portfolio .project {
     color: var(--black);
     font-family: var(--secondaryFont);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#portfolio .project.reversed {
+    flex-direction: row-reverse;
+}
+#portfolio .project .content {
     width: 40%;
 }
 #portfolio .project .title {
@@ -413,13 +427,38 @@ header .btn:hover {
     font-size: 18px;
     font-weight: 500;
 }
+#portfolio .image {
+    height: 400px;
+    width: 620px;
+    perspective: 1000px;
+}
+#portfolio .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow-clip-margin: unset;
+    border-radius: 10px;
+    box-shadow: 3px 3px 60px 0 #00000033;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-origin: center;
+    transform: scale(1.05) rotateY(-8deg);
+}
+#portfolio .project.reversed .image img {
+    transform: scale(1.05) rotateY(8deg);
+}
+#portfolio .project.reversed .image:hover img {
+    transform: scale(1.1) rotateY(0deg) translateY(5px);
+}
+#portfolio .image:hover img {
+    transform: scale(1.1) rotateY(0deg) translateY(-5px);
+}
 
 /* ------ Blog section ------ */
 #blog {
     background: #fafafa;
 }
 #blog .container {
-    margin-top: 6%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -451,6 +490,7 @@ header .btn:hover {
     transition: all .2s ease-in-out;
     object-fit: cover;
     overflow-clip-margin: unset;
+    cursor: pointer;
 }
 #blog .card .tags {
     display: flex;
@@ -666,4 +706,84 @@ header .btn:hover {
 }
 #contact .contact-form .form-col {
     flex: 1;
+}
+
+/* ------ Footer ------ */
+footer {
+    border-top: 1px solid #e9e9e9;
+    padding: 60px 12%;
+}
+footer .container {    
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+footer .logo {
+    font-family: var(--primaryFont);
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+}
+footer .logo span {
+    color: var(--primary);
+    letter-spacing: -2px;
+}
+footer p.desc {
+    font-family: var(--secondaryFont);
+    color: var(--grey);
+    font-size: 18px;
+    width: 60%;
+}
+footer .col-heading {
+    margin-bottom: 8px;
+    font-family: var(--primaryFont);
+    color: var(--black);
+    font-size: 20px;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer nav a,
+footer .col.contact p,
+footer .other-links .copyright,
+footer .col.socialmedia a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    transition: color .2s ease-in-out;
+    font-family: var(--secondaryFont);
+}
+footer nav a:hover,
+footer .col.socialmedia a:hover {
+    color: var(--primary);
+}
+footer .col.socialmedia a,
+footer .col.contact p {
+    margin-bottom: 3px;
+}
+footer .other-links {
+    margin-top: 90px;
+    text-align: center;
+}
+footer .other-links .links {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grey);
+    transition: color .2s ease-in-out;
+    font-family: var(--secondaryFont);
+}
+footer .other-links .links a {
+    color: var(--black);
+    transition: color .2s ease-in-out;
+}
+footer .other-links .links a:hover {
+    color: var(--primary);
 }

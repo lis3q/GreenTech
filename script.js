@@ -46,3 +46,11 @@ savedBtns.forEach((btn, index) => {
     saveBtns[index].classList.remove("active");
   });
 });
+
+// AOS 
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 500 
+});

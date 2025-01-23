@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="responsiveness.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GreenTech | Innovating for a Sustainable Future</title>
 </head>
 <body>
     
     <!-- Header -->
     <header>
-        <a href="index.html" aria-label="Home"><div class="logo"><span>Green</span>Tech</div></a>
+        <a href="#home" aria-label="Home"><div class="logo"><span>Green</span>Tech</div></a>
         <nav>
             <a href="#home" aria-label="Home">Home</a>
             <a href="#services" aria-label="Services">Services</a>
@@ -26,9 +27,9 @@
         <a href="" aria-label="Get Started" class="btn">Get Started</a>
     </header>
 
-    <!-- Hero section -->
+    <!-- Hero -->
     <main>
-        <article class="hero">
+        <article class="hero" data-aos="zoom-in-up">
             <h1>Sustainable <span>technologies</span> for the future of your company</h1>
             <p class="desc">We create ecological IT solutions that drive business by leveraging sustainable technologies</p>
             <a href="#services" aria-label="Our Services" class="btn">Our Services</a>
@@ -54,7 +55,7 @@
     <section id="services">
 
         <!-- Section heading -->
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up">
             <h4 class="section-name">Services</h4>
             <h1 class="section-title">What We Do To <br> Empower Your Business</h1>
         </div>
@@ -93,7 +94,7 @@
     <section id="testimonials">
 
         <!-- Section heading -->
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up">
             <h4 class="section-name">Testimonials</h4>
             <h1 class="section-title">Don’t Believe Me <br> Check What Clients <br> Think Of Us</h1>
             <div class="slider-btns">
@@ -150,58 +151,141 @@
 
     </section>
 
+    <!-- Portfolio section -->
     <section id="portfolio">
 
         <!-- Section heading -->
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up">
             <h4 class="section-name">Portfolio</h4>
             <h1 class="section-title">Where Innovation <br> Meets Execution</h1>
         </div>
 
-        <!-- Project -->
-        <div class="project">
+        <!-- Container -->
+        <div class="container">
 
-            <div class="content">
-                <h2 class="title">SolarSync - Smart Energy Management System</h2>
-                <p class="desc">SolarSync is an intelligent energy management system designed for businesses and homes to optimize renewable energy usage.</p>
+            <!-- Project -->
+            <div class="project">
 
-                <!-- Features -->
-                <div class="features">
+                <div class="content">
+                    <h2 class="title">SolarSync - Smart Energy Management System</h2>
+                    <p class="desc">SolarSync is an intelligent energy management system designed for businesses and homes to optimize renewable energy usage. By harnessing advanced analytics and IoT technology, it ensures maximum efficiency and cost savings while promoting a sustainable future.</p>
 
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-palette"></i></div>
-                        <h3 class="name">Real-Time Dashboard</h3>
-                    </div>
+                    <!-- Features -->
+                    <div class="features">
 
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-palette"></i></div>
-                        <h3 class="name">IoT Integration</h3>
-                    </div>
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <h3 class="name">Real-Time Dashboard</h3>
+                        </div>
 
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-palette"></i></div>
-                        <h3 class="name">Reporting</h3>
-                    </div>
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-chart-simple"></i></div>
+                            <h3 class="name">IoT Integration</h3>
+                        </div>
 
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-palette"></i></div>
-                        <h3 class="name">Responsive Design</h3>
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-network-wired"></i></div>
+                            <h3 class="name">Reporting</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 class="name">Responsive Design</h3>
+                        </div>
+
                     </div>
 
                 </div>
 
+                <div class="image"><img src="img/portfolio1.jpg" alt="Portfolio image"></div>
+
             </div>
 
-            <div class="image"></div>
+            <!-- Project -->
+            <div class="project reversed">
+
+                <div class="content">
+                    <h2 class="title">EcoTrack - Carbon Footprint Tracker</h2>
+                    <p class="desc">EcoTrack is an advanced platform that allows businesses to monitor, analyze, and reduce their carbon footprint. Designed with a user-friendly interface and powerful analytics, it empowers organizations to make eco-friendly decisions effortlessly.</p>
+
+                    <!-- Features -->
+                    <div class="features">
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-leaf"></i></div>
+                            <h3 class="name">Emission Monitoring</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="name">Analytics Dashboard</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                            <h3 class="name">Custom Reduction Plans</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-cloud"></i></div>
+                            <h3 class="name">Cloud Integration</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="image"><img src="img/portfolio2.jpg" alt="Portfolio image"></div>
+
+            </div>
+
+            <!-- Project -->
+            <div class="project">
+
+                <div class="content">
+                    <h2 class="title">WindWise - Predictive Wind Energy Analytics</h2>
+                    <p class="desc">WindWise is an advanced analytics platform designed to enhance the efficiency of wind turbines through predictive algorithms and real-time data. By integrating AI and IoT technology, it helps optimize energy production, reduce operational costs, and support a sustainable energy future.</p>
+
+                    <!-- Features -->
+                    <div class="features">
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-robot"></i></div>
+                            <h3 class="name">AI-Powered Forecasting</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-chart-line"></i></div>
+                            <h3 class="name">Real-Time Monitoring</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-cogs"></i></div>
+                            <h3 class="name">Optimization Algorithms</h3>
+                        </div>
+
+                        <div class="feature">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <h3 class="name">Interactive User Dashboard</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="image"><img src="img/portfolio3.jpg" alt="Portfolio image"></div>
+
+            </div>
 
         </div>
 
     </section>
 
+    <!-- Blog section -->
     <section id="blog">
 
         <!-- Section heading -->
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up">
             <h4 class="section-name">Blog</h4>
             <h1 class="section-title">Insights To <br> Inspire Innovation</h1>
             <p class="section-desc">Stay ahead with the latest trends, ideas, and stories that spark creativity and drive innovation forward.</p>
@@ -294,14 +378,15 @@
 
         </div>
 
-        <a href="#" class="btn">Our Blog</a>
+        <a href="#!" class="btn">Our Blog</a>
 
     </section>
 
+    <!-- Contact section -->
     <section id="contact">
 
         <!-- Section heading -->
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-up">
             <h4 class="section-name">Contact</h4>
             <h1 class="section-title">Get In Touch <br> Let’s Make It Happen</h1>
             <p class="section-desc">Have a question or ready to start your project? We're here to help—let's create something amazing together!</p>
@@ -312,13 +397,13 @@
                 <!-- Location -->
                 <div class="row">            
                     <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <p><b>Address:</b> 123, Anywhere St. Any City</p>
+                    <p><b>Address:</b> 123 GreenWay, San Francisco, CA, USA</p>
                 </div>
 
                 <!-- Phone -->
                 <div class="row">            
                     <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                    <p><b>Phone:</b> +00 123-456-7890</p>
+                    <p><b>Phone:</b> +1 234 567 890</p>
                 </div>
 
                 <!-- Email -->
@@ -373,7 +458,59 @@
 
     </section>
 
+    <!-- Footer -->
+    <footer>
+        
+        <!-- Container -->
+        <div class="container">
 
+            <!-- Logo column -->
+            <div class="col">
+                <div class="logo"><a href="#home" aria-label="Home"><div class="logo"><span>Green</span>Tech</div></a></div>
+                <p class="desc">Innovating for a sustainable future. Partner with us to build a greener tomorrow.</p>
+            </div>
+
+            <!-- Navigation column -->
+            <div class="col">
+                <h3 class="col-heading">Quick Links</h3>
+                <nav>
+                    <a href="#home" aria-label="Home">Home</a>
+                    <a href="#services" aria-label="Services">Services</a>
+                    <a href="#testimonials" aria-label="Testimonials">Testimonials</a>
+                    <a href="#portfolio" aria-label="Portfolio">Portfolio</a>
+                    <a href="#blog" aria-label="Blog">Blog</a>
+                    <a href="#contact" aria-label="Contact">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Social Media column -->
+            <div class="col socialmedia">
+                <h3 class="col-heading">Social Media</h3>
+                <a href="#!" aria-label="Facebook">Facebook</a>
+                <a href="#!" aria-label="X">X</a>
+                <a href="#!" aria-label="TikTok">TikTok</a>
+                <a href="#!" aria-label="Instagram">Instagram</a>
+            </div>
+
+            <!-- Contact column -->
+            <div class="col contact">
+                <h3 class="col-heading">Contact</h3>
+                <p>123 GreenWay, San Francisco, CA, USA</p>
+                <p>greentech@business.com.pl</p>
+                <p>+1 234 567 890</p>
+            </div>
+
+        </div>
+
+        <div class="other-links">
+            <p class="copyright">&COPY; 2025 GreenTech. All rights reserved.</p>
+            <p class="links"><a href="#!" aria-label="Privacy Policy">Privacy Policy</a> | <a href="#!" aria-label="Terms of Service">Terms of Service</a></p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
