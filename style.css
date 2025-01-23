@@ -723,6 +723,9 @@ footer .col {
     flex-direction: column;
     gap: 6px;
 }
+footer .col.logo-col {
+    width: 40%;
+}
 footer .logo {
     font-family: var(--primaryFont);
     color: var(--black);
