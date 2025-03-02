@@ -34,17 +34,6 @@
     .hero .btn {
         font-size: 16px;
     }
-    /* Social proof */
-    .hero .social-proof {
-        width: 100%;
-        flex-direction: column;
-        gap: 14px;
-        left: 50%;
-        transform: translate(-50%, -3%);
-    }
-    .hero .social-proof p {
-        text-align: center;
-    }
 
     /* ------ Services section ------ */
     #services .container {

@@ -51,6 +51,14 @@ section {
     --secondaryFont: 'Roboto', sans-serif;
 }
 
+/* ------ Home section ------ */
+#home {
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.623)), url(img/bg.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
 
 /* ------ Header ------ */
 header {
@@ -62,13 +70,13 @@ header {
 }
 /* Logo */
 header .logo {
-    color: var(--black);
-    font-size: 24px;
-    font-weight: 600;
+    color: var(--white);
+    font-size: 26px;
+    font-weight: 700;
 }
 header .logo span {
     color: var(--primary);
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 /* Nav */
 header nav {
@@ -79,9 +87,9 @@ header nav {
 }
 header nav a {
     position: relative;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--white);
     transition: color .2s ease-in-out;
 }
 header nav a::after {
@@ -102,10 +110,10 @@ header nav a:hover::after {
 }
 /* Button */
 header .btn {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--white);
     padding: 8px 20px;
     border-radius: 50px;
     transition: all .2s ease-in-out;
@@ -113,19 +121,14 @@ header .btn {
 
 /* ------ Hero ------ */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: calc(100vh - 80px);
-    padding: 8% 12%;
-}
-.hero .content {
-    width: 50%;
+    padding: 0% 12%;
+    margin: 7% auto 0 auto;
+    width: 90%;
 }
 .hero .heading {
-    font-size: 48px;
+    font-size: 72px;
     font-family: var(--primaryFont);
-    color: var(--black);
+    color: var(--white);
     font-weight: 600;
     line-height: 120%;
 }
@@ -134,7 +137,7 @@ header .btn {
     position: relative;
     display: inline-block;
 }
-/* .hero .heading span::after {
+.hero .heading span::after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -145,63 +148,38 @@ header .btn {
     background: var(--primary);
     border-radius: 50px;
     transform: rotate(-1deg);
-} */
+}
+.hero .content {
+    border: 1px solid #adadad2f;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    padding: 5%;
+    border-radius: 40px;
+}
 .hero .desc {
-    margin-top: 24px;
-    font-size: 22px;
+    font-size: 26px;
     font-family: var(--secondaryFont);
     color: var(--grey);
+    width: 60%;
+    margin: 40px auto 40px auto;
 }
-.hero .image {
-    height: 540px;
-    width: 600px;
-    background-image: url(img/bg.png);
+.hero .image img {
+    height: 700px;
 }
 .hero .btn {
     font-family: var(--primaryFont);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--white);
     background: var(--primary);
-    padding: 10px 24px;
+    padding: 12px 24px;
     border-radius: 50px;
     transition: all .2s ease-in-out;
     box-shadow: 0 5px 14px 0 #00c80d40;
     transition: all .2s ease-in-out;
-    display: none;
 }
 .hero .btn:hover {
     box-shadow: 0 5px 14px 0 #00c80d80;
-}
-/* Social proof */
-.hero .social-proof {
-    position: absolute;
-    bottom: 3%;
-    left: 3%;
-    display: flex;
-    gap: 40px;
-}
-.hero .social-proof .images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero .social-proof .images img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: -20px;
-    box-shadow: 0 4px 20px 0 #ffffff28;
-    object-fit: cover;
-    object-position: top;
-    overflow-clip-margin: unset;
-}
-.hero .social-proof p {
-    font-family: var(--secondaryFont);
-    color: var(--white);
-    font-size: 16px;
-    text-align: left;
-    line-height: 140%;
 }
 
 
@@ -394,6 +372,7 @@ header .btn {
     margin-top: 10px;
     color: var(--grey);
     font-size: 17px;
+    line-height: 132%;
 }
 #portfolio .project .features {
     margin-top: 56px;
@@ -432,7 +411,7 @@ header .btn {
     object-fit: cover;
     overflow-clip-margin: unset;
     border-radius: 10px;
-    box-shadow: 3px 3px 60px 0 #00000033;
+    box-shadow: 3px 3px 60px 0 #00000015;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform-origin: center;
     transform: scale(1.05) rotateY(-8deg);
