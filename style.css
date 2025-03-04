@@ -57,7 +57,7 @@ section {
     background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.623)), url(img/bg.jpg);
     background-size: cover;
     background-position: top;
-    height: 100vh;
+    height: 94vh;
 }
 
 /* ------ Header ------ */
@@ -65,18 +65,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 12%;
+    padding: 18px 12%;
     font-family: var(--primaryFont);
+    background: var(--white);
 }
 /* Logo */
 header .logo {
-    color: var(--white);
-    font-size: 26px;
-    font-weight: 700;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
 }
 header .logo span {
     color: var(--primary);
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 }
 /* Nav */
 header nav {
@@ -87,9 +88,9 @@ header nav {
 }
 header nav a {
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    color: var(--white);
+    color: var(--black);
     transition: color .2s ease-in-out;
 }
 header nav a::after {
@@ -110,19 +111,23 @@ header nav a:hover::after {
 }
 /* Button */
 header .btn {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--black);
-    background-color: var(--white);
-    padding: 8px 20px;
+    border: 2px solid var(--black);
+    padding: 6px 20px;
     border-radius: 50px;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+header .btn:hover {
+    background: var(--black);
+    color: var(--white);
 }
 
 /* ------ Hero ------ */
 .hero {
     padding: 0% 12%;
-    margin: 7% auto 0 auto;
+    margin: 9% auto 0 auto;
     width: 90%;
 }
 .hero .heading {
@@ -157,9 +162,9 @@ header .btn {
     border-radius: 40px;
 }
 .hero .desc {
-    font-size: 26px;
+    font-size: 24px;
     font-family: var(--secondaryFont);
-    color: var(--grey);
+    color: #d6d6d6;
     width: 60%;
     margin: 40px auto 40px auto;
 }
@@ -179,7 +184,7 @@ header .btn {
     transition: all .2s ease-in-out;
 }
 .hero .btn:hover {
-    box-shadow: 0 5px 14px 0 #00c80d80;
+    box-shadow: 0 0 20px 0 #00c80d80;
 }
 
 
@@ -530,6 +535,7 @@ header .btn {
     width: 46px;
     height: 46px;
     clip-path: circle(48%);
+    cursor: pointer;
 }
 #blog .card .footer .picture img {
     width: 100%;
@@ -542,6 +548,7 @@ header .btn {
     font-size: 17px;
     font-weight: 400;
     color: var(--black);
+    cursor: pointer;
 }
 #blog .card .footer .date {
     margin-top: 3px;
@@ -704,6 +711,7 @@ footer .logo {
     color: var(--black);
     font-size: 24px;
     font-weight: 600;
+    width: max-content;
 }
 footer .logo span {
     color: var(--primary);
@@ -735,6 +743,7 @@ footer .col.socialmedia a {
     color: var(--grey);
     transition: color .2s ease-in-out;
     font-family: var(--secondaryFont);
+    width: max-content;
 }
 footer nav a:hover,
 footer .col.socialmedia a:hover {
@@ -745,8 +754,11 @@ footer .col.contact p {
     margin-bottom: 3px;
 }
 footer .other-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 90px;
-    text-align: center;
 }
 footer .other-links .links {
     margin-top: 10px;
