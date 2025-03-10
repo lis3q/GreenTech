@@ -86,14 +86,14 @@ header nav {
     align-items: center;
     gap: 20px;
 }
-header nav a {
+header nav .link {
     position: relative;
     font-size: 15px;
     font-weight: 400;
     color: var(--black);
     transition: color .2s ease-in-out;
 }
-header nav a::after {
+header nav .link::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -103,10 +103,10 @@ header nav a::after {
     background-color: var(--primary);
     transition: width .2s ease-in-out;
 }
-header nav a:hover {
+header nav .link:hover {
     color: var(--primary);
 }
-header nav a:hover::after {
+header nav .link:hover::after {
     width: 50%;
 }
 /* Button */
@@ -122,6 +122,12 @@ header .btn {
 header .btn:hover {
     background: var(--black);
     color: var(--white);
+}
+header .btn.btn-mobile {
+    display: none;
+}
+header .hamburger {
+    display: none;
 }
 
 /* ------ Hero ------ */

@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GreenTech is an innovative company focused on sustainable technology solutions.">
+
+    <!-- SEO -->
+    <meta name="description" content="Discover how GreenTech is revolutionizing sustainability with eco-friendly software, green servers, and IT consulting. Join us in creating a greener future!">
+    <meta name="author" content="Szymon Lisek">
+    <meta name="robots" content="index, follow">
+
+    <!-- Files -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiveness.css">
+    <link href="hamburgers.css" rel="stylesheet">
+
+    <!-- Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>GreenTech | Innovating for a Sustainable Future</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+
+    <title>GreenTech - Pioneering Sustainable Technology Solutions</title>
 </head>
 <body>
     
@@ -20,14 +34,22 @@
         <header>
             <a href="#home" aria-label="Home"><div class="logo"><span>Green</span>Tech</div></a>
             <nav>
-                <a href="#home" aria-label="Home">Home</a>
-                <a href="#services" aria-label="Services">Services</a>
-                <a href="#testimonials" aria-label="Testimonials">Testimonials</a>
-                <a href="#portfolio" aria-label="Portfolio">Portfolio</a>
-                <a href="#blog" aria-label="Blog">Blog</a>
-                <a href="#contact" aria-label="Contact">Contact</a>
+                <a href="#home" aria-label="Home" class="link">Home</a>
+                <a href="#services" aria-label="Services" class="link">Services</a>
+                <a href="#testimonials" aria-label="Testimonials" class="link">Testimonials</a>
+                <a href="#portfolio" aria-label="Portfolio" class="link">Portfolio</a>
+                <a href="#blog" aria-label="Blog" class="link">Blog</a>
+                <a href="#contact" aria-label="Contact" class="link">Contact</a>
+                <a href="#!" aria-label="Get Started" class="btn btn-mobile">Get Started</a>
             </nav>
-            <a href="" aria-label="Get Started" class="btn">Get Started</a>
+
+            <a href="#!" aria-label="Get Started" class="btn">Get Started</a>
+
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
         </header>
 
         <!-- Hero -->
@@ -503,6 +525,7 @@
     </footer>
 
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

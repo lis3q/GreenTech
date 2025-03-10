@@ -1,31 +1,70 @@
-/* Phones */
 @media screen and (max-width: 500px) {
 
-    /* ------ Settings ------ */
+    /* ------ Sections ------ */
     .section-title {
         font-size: 34px;
     }
-    header {
-        padding: 40px 4%;
+    .section-desc {
+        width: 100%;
     }
     section {
         padding: 100px 4%;
     }
+
+    /* ------ Header section ------ */
+    header {
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 14px 4%;
+        box-shadow: 0 20px 20px 0 #00000008;
+    }
+    header .hamburger {
+        display: block;
+    }
     header nav {
+        z-index: 4;
+        padding: 60px 0;
+        z-index: 4;
+        position: fixed;
+        border-top: 1px solid #e9e9e9;
+        top: 62px;
+        left: 0;
+        width: 100%;
         display: none;
+        background-color: white;
+        flex-direction: column;
+        justify-content: start;
+        box-shadow: 0 20px 20px 0 #00000008;
+    }
+    header .btn.btn-mobile {
+        display: block !important;
     }
     header .btn {
         display: none;
     }
-
-    /* ------ Hero ------ */
-    .hero {
-        width: 94%;
-        padding: 14% 24px;
+    header nav.active {
+        display: flex;
     }
-    .hero h1 {
-        font-size: 40px;
+
+    /* ------ Home section section ------ */
+    #home {
+        height: 70vh;
+    }
+
+    /* ------ Hero section ------ */
+    .hero {
+        padding: 12% 4%;
         width: 100%;
+        margin-top: 62px;
+    }
+    .hero .content {
+        padding: 12%;
+    }
+    .hero .heading {
+        font-size: 44px;
     }
     .hero p.desc {
         font-size: 20px;
@@ -41,4 +80,79 @@
         grid-template-columns: repeat(1, 0fr);
         gap: 40px;
     }
+
+    /* ------ Testimonials section ------ */
+    #testimonials {
+        flex-direction: column;
+        height: 100vh;
+    }
+    #testimonials .swiper {
+        margin: 50% auto 0 auto;
+        width: 84%;
+        padding: 20% 0;
+    }
+
+    /* ------ Portfolio section ------ */
+    #portfolio .project {
+        flex-direction: column-reverse;
+    }
+    #portfolio .project .content {
+        margin-top: 40px;
+        width: 100%;
+    }
+    #portfolio .project.reversed {
+        flex-direction: column-reverse;
+    }
+    #portfolio .image {
+        width: 94%;
+        height: 260px;
+    }
+    #portfolio .project .features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ------ Blog section ------ */
+    #blog .container {
+        flex-direction: column;
+    }
+    #blog .card {
+        width: 100%;
+    }
+
+    /* ------ Contact section ------ */
+    #contact {
+        flex-direction: column;
+    }
+    #contact .contact-form .form-row {
+        flex-direction: column;
+    }
+    #contact .contact-form  {
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    /* ------ Footer section ------ */
+    footer {
+        padding: 60px 4%;
+    }
+    footer .col.logo-col {
+        width: 60%;
+    }
+    footer p.desc {
+        width: 100%;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+    }
+    footer .col,
+    footer nav {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
 }

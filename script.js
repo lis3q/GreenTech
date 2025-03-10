@@ -54,3 +54,11 @@ AOS.init({
   once: true,
   offset: 500 
 });
+
+// Hamburger menu
+const hamburgerBtn = document.querySelector("header .hamburger");
+const nav = document.querySelector("header nav");
+hamburgerBtn.addEventListener("click", () => {
+  hamburgerBtn.classList.toggle("is-active");
+  nav.classList.toggle("active");
+})
